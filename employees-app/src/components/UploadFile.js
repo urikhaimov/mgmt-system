@@ -51,6 +51,7 @@ function Previews(props) {
         <img
           src={file.preview}
           style={img}
+          alt={file.name}
         />
       </div>
     </div>

@@ -23,8 +23,7 @@ function App() {
   const [text, setText] = useState('');
   const [isAddUserOpen, setIsAddUserOpen] = useState(false);
   const [buttonText, setButtonText] = useState('Create User + ');
-  const [picture, setPicture] = useState(null);
-
+ 
 
   const userCreate = (e) => {
     createUser(user)
@@ -40,6 +39,7 @@ function App() {
       });
   }
   const filterUsers = (text, status) => {
+  
     getFilteredUsers(text, status.value).then(users => {
       setUsers(users);
       setStatus(status.value || 'All statuses');
@@ -75,9 +75,6 @@ function App() {
       user.name = value;
     } else if (type === 'select') {
       user.status = value;
-    } else if (type === 'pic') {
-      user.img = `images/${value.replace(/^.*[\\\/]/, '')}`;
-      setPicture(value);
     }
     setUser(user);
   }

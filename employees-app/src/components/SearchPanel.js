@@ -15,13 +15,13 @@ const SearchPanel = () => {
     const text = context.text;
     const status = context.status;
     const selectedOption = {
-        value: status,
+        value: status === 'All statuses' ? '' : status,
         label: status
     }
-    
+
     const handleChangeText = (e) => {
         let value = e.target.value;
-        context.filterUsers(value, status);
+        context.filterUsers(value, selectedOption);
         context.onChangeForm(e)
 
     }
