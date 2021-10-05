@@ -21,9 +21,10 @@ npm install
 npm run build
 
 # Run Node.js back end server
-npm start
-```
+node server
 
+# client-app
+npm start
 Load up http://localhost:3000 in your browser to view the example website.
 
 ## Libraries and frameworks used
