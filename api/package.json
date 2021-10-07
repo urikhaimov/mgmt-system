@@ -13,7 +13,6 @@
     "url": "https://github.com/urikhaimov/"
   },
   "author": "Uri Khaimov",
-  
   "homepage": "https://github.com/urikhaimov/",
   "dependencies": {
     "express": "^4.17.1",
